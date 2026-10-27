@@ -1,0 +1,13 @@
+name: forge-delegate
+repo: https://github.com/MuhamadBarzani/forge-delegate
+tagline: MCP server that hands coding tasks from Claude Code, Codex or opencode to other models, run by opencode
+description: Lets a primary agent (Claude Code, Codex or opencode) delegate tasks such as tests, refactors and lint fixes to another model, which works as a full agent through `opencode run` and returns only a summary, so the primary agent's context stays small. Works with any model your opencode is configured with, including free, local (Ollama) and premium ones. Also includes ask_model for one-shot second opinions from a different model, and background jobs for parallel work.
+tags:
+  - mcp
+  - delegation
+  - claude-code
+  - codex
+installation: |
+  ```bash
+  npx -y forge-delegate setup
+  ```
